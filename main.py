@@ -120,7 +120,6 @@ def start_new_round(state: State) -> None:
             or hand_total(state.dealer_hand) == 21):
         dealer_play(state)
 
-
 def finish_round(state: State) -> None:
     """Compare totals, update credits and statistics, and save the result."""
     player_total = hand_total(state.player_hand)
