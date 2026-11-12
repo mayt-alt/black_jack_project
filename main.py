@@ -344,7 +344,7 @@ def stats(state: State) -> Page:
 @route
 def history(state: State) -> Page:
     """Show previous round results and credit changes."""
-    content = [Header("Game History")]
+    content: list = [Header("Game History")]
     if len(state.history) == 0:
         content.append(Text("You have not completed a round yet."))
 
